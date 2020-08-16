@@ -10,6 +10,7 @@ const blink = keyframes`
 `;
 
 export const Container = styled.div`
+  margin: 0 50px;
   background: #1a1a1b;
   padding: 8px;
   display: flex;
