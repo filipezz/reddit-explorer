@@ -35,7 +35,9 @@ const Dashboard: React.FC = () => {
   useEffect(() => {
     async function loadPosts(): Promise<void> {
       try {
-        const response = await api.get(`/${section}?limit=5`);
+        const response = await api.get(
+          section === 'hot' ? `/${section}?limit=5` : `/${section}?limit=7`,
+        );
         setPosts(
           response.data.data.children.map((post: Request) => ({
             ...post.data,
@@ -152,7 +154,7 @@ const Dashboard: React.FC = () => {
           )}
         </>
       ) : (
-        <GhostElement error={error} numberOfRepetitions={10} />
+        <GhostElement error={error} numberOfRepetitions={7} />
       )}
     </>
   );

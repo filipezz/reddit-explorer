@@ -13,6 +13,7 @@ const Ghost: React.FC = () => {
       <section>
         <div />
         <div />
+        <div />
       </section>
     </Container>
   );

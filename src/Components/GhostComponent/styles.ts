@@ -36,6 +36,11 @@ export const Container = styled.div`
       animation: ${blink} 0.7s ease-in-out alternate infinite;
       &:nth-child(2) {
         margin-top: 8px;
+        width: 75px;
+        height: 10px;
+      }
+      &:nth-child(3) {
+        margin-top: 8px;
         width: 55px;
         height: 10px;
       }
